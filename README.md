@@ -1,16 +1,20 @@
-# counter_app
+# Counter App using Bloc
 
-A new Flutter project.
+## Description
+This is a Simple flutter Counter application with bloc state management
 
-## Getting Started
+## Features
+- toggling between Light & Dark themes using a switch widget
+- displaying the current value of the counter & updating it in case of increment/decrement events
+- triggering a snackbar message if the counter value is a multiple of 5 
 
-This project is a starting point for a Flutter application.
+## code explanation
+ the counter part code flow is done as the following:-  
+ 1- the counter value displayed is obtained from the provided counter bloc state (initially  set as 0)  
+ 2- on pressing the increment/decrement floating action button an event (CounterIncrement/CounterDecrement (provided by blocProvider) ) is triggered which emits the State Class that increments then updates the current state count value which in turn is updated at the ui by the builder  
+ 3- when the counter value reaches a value that is a multiple of 5 a state is emitted which can be used inside the listener in the counter ui to display a snackbar message
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Application Screenshots: 
+|![s1](https://github.com/user-attachments/assets/33c8b919-92b7-4d13-9287-15ffe19b0411)|![s2](https://github.com/user-attachments/assets/c4a68599-df50-40fb-8186-2fce27cb1a30)|
+|-|-|
