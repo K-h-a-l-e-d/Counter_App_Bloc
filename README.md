@@ -9,10 +9,17 @@ This is a Simple flutter Counter application with bloc state management
 - triggering a snackbar message if the counter value is a multiple of 5 
 
 ## code explanation
- the counter part code flow is done as the following:-  
+ the code flow is done as the following:-  
+counter part:  
  1- the counter value displayed is obtained from the provided counter bloc state (initially  set as 0)  
- 2- on pressing the increment/decrement floating action button an event (CounterIncrement/CounterDecrement (provided by blocProvider) ) is triggered which emits the State Class that increments then updates the current state count value which in turn is updated at the ui by the builder  
- 3- when the counter value reaches a value that is a multiple of 5 a state is emitted which can be used inside the listener in the counter ui to display a snackbar message
+ 2- on pressing the increment/decrement floating action button an event (CounterIncrement/CounterDecrement (provided by blocProvider) ) is triggered which emits the State Class that 
+    increments then updates the current state count value which in turn is updated at the ui by the builder  
+ 3- when the counter value reaches a value that is a multiple of 5 a state is emitted which can be used inside the listener in the counter ui to display a snackbar message  
+Themes part:  
+ 1- the ThemeState is provided to the theme property in material app in main page and its set initially as dark theme, when the switch button is toggled (ThemeToggle) event is 
+    triggered which emits a state that checks whether 
+    the current theme is dark or light then it updates the state with the opposite theme
+  
 
 
 ## Application Screenshots: 
